@@ -8,7 +8,7 @@
   <remote name="nanopb" fetch="https://github.com/nanopb"/>
   <remote name="opensbi" fetch="https://github.com/riscv"/>
   <remote name="seL4" fetch="https://github.com/seL4"/>
-  <remote name="sid-agrawal" fetch="ssh://git@github.com/sid-agrawal"/>
+  <remote name="sid-agrawal" fetch="https://github.com/sid-agrawal"/>
   
   <default remote="seL4" revision="master"/>
   

@@ -30,5 +30,5 @@
     <linkfile src="easy-settings.cmake" dest="easy-settings.cmake"/>
   </project>
   <project name="seL4.git" path="kernel" remote="seL4" revision="eed10507ce62bb4ba5576d1fce79949dcb25494d" upstream="master" dest-branch="master"/>
-  <project name="seL4_libs.git" path="projects/seL4_libs" remote="sid-agrawal" revision="5d869168b4a10a1b9a603c6c8bdbdf6442224757" upstream="main" dest-branch="main"/>
+  <project name="seL4_libs.git" path="projects/seL4_libs" remote="sid-agrawal" revision="0d37c61f89dc335a5905f5625be3125e2afe42f3" upstream="main" dest-branch="main"/>
 </manifest>

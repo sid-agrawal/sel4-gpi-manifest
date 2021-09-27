@@ -11,5 +11,17 @@ However the kernel and some of the libs come from sid-agrawal's forks.
 ```bash
 mkdir sel4-gpi-system
 cd sel4-gpi-system
-repo init -u https://github.com/sid-agrawal/sel4-gpi-manifest && repo sync
+repo init -u https://github.com/sid-agrawal/sel4-gpi-manifest -b refs/tags/v3.0 
+repo sync
+
+# Jump to the docker sel4 dev environment, omit if you do not care
+# https://docs.sel4.systems/projects/dockerfiles/
+container 
+mkdir build  
+cd build
+../init-build.sh -DPLATFORM=ia32 -DSIMULATION=TRUE 
+ninja  && ./simulate
+
+# To exit Qemu
+Ctrl-A X
 ```

@@ -25,11 +25,11 @@
   <project name="sel4runtime.git" path="projects/sel4runtime" revision="e1c51c9b506708398bb1ffbf9098ae82855d3c14" upstream="master" dest-branch="master"/>
   <project name="util_libs.git" path="projects/util_libs" revision="5f6cec55789f9a0160c427695f600bcf6dd4a1a7" upstream="master" dest-branch="master"/>
   <project name="seL4.git" path="kernel" remote="seL4" revision="eed10507ce62bb4ba5576d1fce79949dcb25494d" upstream="master" dest-branch="master"/>
-  <!--
+  
   <project name="sel4-gpi.git" path="projects/sel4-gpi" remote="sid-agrawal" revision="6a5e7f7b622cccacf764febd310fc405b7017473" upstream="main" dest-branch="main">
     <linkfile src="easy-settings.cmake" dest="easy-settings.cmake"/>
   </project>
   
   <project name="seL4_libs.git" path="projects/seL4_libs" remote="sid-agrawal" revision="0d37c61f89dc335a5905f5625be3125e2afe42f3" upstream="main" dest-branch="main"/>
--->
+
 </manifest>

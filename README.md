@@ -19,7 +19,7 @@ repo sync
 container 
 mkdir build  
 cd build
-../init-build.sh -DPLATFORM=ia32 -DSIMULATION=TRUE 
+../init-build.sh -DPLATFORM=qemu-arm-virt -DSIMULATION=TRUE 
 ninja  && ./simulate
 
 # To exit Qemu

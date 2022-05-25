@@ -109,3 +109,16 @@ see your file listed, then do something like:
 fatload mmc 0 0x1000000 sel4test-driver-image-arm-bcm2711
 bootefi 0x1000000
 ```
+
+Additionally I add a boot.scr file that automates loading and booting the image. 
+First create boot.txt with the commands below.
+
+```bash
+fatload mmc 0 0x1000000 sel4test-driver-image-arm-bcm2711
+bootelf 0x1000000
+```
+Then use mkimage from the u-boot source tree:
+```bash
+./tools/mkimage -A arm -O linux -T script -C none -n boot.scr -d boot.txt boot.scr
+```
+Copy boot.scr to the SD card.

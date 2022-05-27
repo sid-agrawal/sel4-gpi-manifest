@@ -32,7 +32,9 @@ We are using the adafruit serial to USB cable.
 
 ![signal-2022-05-27-121445_001](https://user-images.githubusercontent.com/22774472/170776077-91c851e8-5698-4185-a1ec-70e30e09c4e0.jpeg)
 
-
+```bash
+sudo picocom -b 115200 -f n /dev/ttyUSB0
+```
 ## U-Boot
 
 Right now, the default U-Boot will not successfully boot an seL4 image

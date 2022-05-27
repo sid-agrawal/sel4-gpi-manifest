@@ -135,3 +135,7 @@ Then use mkimage from the u-boot source tree:
 ./tools/mkimage -A arm -O linux -T script -C none -n boot.scr -d boot.txt boot.scr
 ```
 Copy boot.scr to the SD card.
+
+
+## Reimaging over Serial
+TODO

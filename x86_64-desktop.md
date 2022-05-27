@@ -99,3 +99,22 @@ We are using the [adafruit](https://www.adafruit.com/product/954) serial to USB 
 | Green |     TX     | RXD | 
 | White |     RX     | TXD | 
 | Black |     GND    | GND | 
+
+
+### dijkstra
+Spec: i5, 10 GB ram
+
+#### Serial
+Has a DB9 serial port at the back.
+![image](https://user-images.githubusercontent.com/22774472/170782501-d5d1e64f-16bc-4b48-adf2-c585fc4d9c28.png)
+
+
+We are using the [adafruit](https://www.adafruit.com/product/954) serial to USB cable.
+| Color |  Cable Side | Board Side | 
+|-----------|-----------| -----------|
+| Green |    TX     | RXD - Pin2 | 
+| White |     RX     | TXD - Pin3| 
+| Black |    GND    | GND - Pin 5 | 
+
+
+> When using DTECH Cable instead of ADAFRUIT. Remember that Green and white are flipped.

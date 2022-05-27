@@ -10,8 +10,14 @@ hardware.
 
 ## Simulation
 
-{% include sel4test.md %}
-
+Checkout the sel4test project using repo as per seL4Test
+```bash
+repo init -u https://github.com/seL4/sel4test-manifest.git
+repo sync
+mkdir cbuild
+cd cbuild
+../init-build.sh -DPLATFORM=x86_64  && ninja
+```
 Please substitute `-DPLATFORM=ia32` in place of `-DPLATFORM=x86_64` if you would
 prefer to build 32-bit binaries.
 

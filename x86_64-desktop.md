@@ -79,3 +79,23 @@ And you're done. Output will come on the serial port
 The lab machines we have tried this on is:
 - hemlock 
 - minsky
+
+
+### hemlock
+Spec: i7, 16G ram
+MotherBoard: [Manual](https://dlcdnets.asus.com/pub/ASUS/mb/LGA1151/PRIME_H270M-PLUS/E12027_PRIME_H270M-PLUS_UM_WEB.pdf) 
+
+#### Serial
+
+![image](https://user-images.githubusercontent.com/22774472/170778599-517aeb24-2d1c-405b-a7f6-13d0feda4889.png)
+
+Here is zoomed in picture of connector-11.
+![image](https://user-images.githubusercontent.com/22774472/170778542-7a25dfa5-5dfd-40b3-98c9-5dfdf8ca9ee0.png)
+
+
+We are using the [adafruit](https://www.adafruit.com/product/954) serial to USB cable.
+| Color | Cable Side | Board Side | 
+|-------|------------|------------| 
+| Green |     TX     | RXD | 
+| White |     RX     | TXD | 
+| Black |     GND    | GND | 

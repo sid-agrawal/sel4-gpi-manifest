@@ -18,7 +18,20 @@ SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
 # Raspberry PI 4 Model B
 
 ## Serial connection
-Serial TX and RX are located at GPIO pins 14 and 15 respectively
+Serial TX and RX are located at GPIO pins 14 and 15 respectively. GPIO pin numbers are different from the numbers in the circles below. I am calling the 
+numbers in circles "Board Side" to avoid confusion.
+
+![Screenshot 2022-05-27 120900](https://user-images.githubusercontent.com/22774472/170775307-8da69ea6-1777-4664-b4f0-11e535bcc23f.jpg)
+
+We are using the adafruit serial to USB cable.
+| Color | Cable Side | Board Side | GPIO |
+|-------|------------|------------| -----|
+| Green |     TX    | RX  - Pin 10| GPIO 15 - UART_ RXD |
+| White |     RX    | TX  - Pin 08| GPIO 14 - UART_ TXD |
+| Black |     GND   | GND - Pin 06| NA |
+
+![signal-2022-05-27-121445_001](https://user-images.githubusercontent.com/22774472/170776077-91c851e8-5698-4185-a1ec-70e30e09c4e0.jpeg)
+
 
 ## U-Boot
 

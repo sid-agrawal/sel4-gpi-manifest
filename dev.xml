@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2022 seL4 Project a Series of LF Projects, LLC
+
+   SPDX-License-Identifier: BSD-2-Clause
+-->
+<manifest>
+  <remote name="nanopb" fetch="https://github.com/nanopb"/>
+  <remote name="opensbi" fetch="https://github.com/riscv"/>
+  <remote name="seL4" fetch="https://github.com/seL4"/>
+  <remote name="sid-agrawal" fetch="ssh://git@github.com/sid-agrawal"/>
+  
+  <default remote="seL4" revision="master"/>
+  
+  <project name="musllibc.git" path="projects/musllibc" revision="3d6b939e8f05cb1d2a1a8c8166609bf2e652e975" upstream="sel4" dest-branch="sel4"/>
+  <project name="nanopb" path="tools/nanopb" remote="nanopb" revision="1466e6f953835b191a7f5acf0c06c941d4cd33d9" upstream="master" dest-branch="refs/tags/0.4.3"/>
+  <project name="opensbi" path="tools/opensbi" remote="opensbi" revision="a98258d0b537a295f517bbc8d813007336731fa9" upstream="refs/tags/v0.8" dest-branch="refs/tags/v0.8"/>
+  <project name="seL4.git" path="kernel" remote="sid-agrawal" revision="rpe" upstream="rpe" dest-branch="rpe"/>
+  <project name="seL4_libs.git" path="projects/seL4_libs" remote="sid-agrawal" revision="main" upstream="main" dest-branch="main"/>
+  <project name="seL4_tools.git" path="tools/seL4" revision="2f15ba2dc6a08c30b74c722b0673131d2aab32ac" upstream="master" dest-branch="master">
+    <linkfile src="cmake-tool/init-build.sh" dest="init-build.sh"/>
+    <linkfile src="cmake-tool/griddle" dest="griddle"/>
+  </project>
+  <project name="sel4_projects_libs" path="projects/sel4_projects_libs" revision="b1802966d8023fb0159e1c41ec39d0db97f9b9c2" upstream="master" dest-branch="master"/>
+  <project name="sel4runtime.git" path="projects/sel4runtime" revision="d935dd05da0cf959e9fd0140af913dc6fdaa0221" upstream="master" dest-branch="master"/>
+  <project name="sel4-gpi.git" path="projects/sel4-gpi" remote="sid-agrawal" revision="main" upstream="main" dest-branch="main">
+    <linkfile src="easy-settings.cmake" dest="easy-settings.cmake"/>
+  </project>
+  <project name="util_libs.git" path="projects/util_libs" revision="5ffbc4619850e21c960f33bf852c20a9a7be4b12" upstream="master" dest-branch="master"/>
+</manifest>

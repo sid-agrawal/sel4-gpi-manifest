@@ -25,3 +25,24 @@ ninja  && ./simulate
 # To exit Qemu
 Ctrl-A X
 ```
+
+# Setup(as a dev) instructions
+
+```bash
+mkdir sel4-gpi-system
+cd sel4-gpi-system
+repo init -u https://github.com/sid-agrawal/sel4-gpi-manifest  -m dev.xml
+repo sync
+./checkout.sh
+
+# Jump to the docker sel4 dev environment, omit if you do not care
+# https://docs.sel4.systems/projects/dockerfiles/
+container 
+mkdir build  
+cd build
+../init-build.sh -DPLATFORM=qemu-arm-virt -DSIMULATION=TRUE 
+ninja  && ./simulate
+
+# To exit Qemu
+Ctrl-A X
+```

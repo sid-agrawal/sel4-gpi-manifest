@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
    Copyright 2022 seL4 Project a Series of LF Projects, LLC
+
    SPDX-License-Identifier: BSD-2-Clause
 -->
 <manifest>
@@ -24,7 +25,7 @@
   </project>
   <project name="sel4_projects_libs" path="projects/sel4_projects_libs" remote="sid-agrawal"  revision="master" upstream="master" dest-branch="master"/>
   <project name="sel4runtime.git" path="projects/sel4runtime" revision="d935dd05da0cf959e9fd0140af913dc6fdaa0221" upstream="master" dest-branch="master"/>
-  <project name="sel4test.git" path="projects/sel4test" revision="989759fdda9223115233e4800fdfd230f60e85d2" upstream="master" dest-branch="master">
+  <project name="sel4test.git" path="projects/sel4test" revision="989759fdda9223115233e4800fdfd230f60e85d2" upstream="master" dest-branch="master"/>
   <project name="sel4-gpi.git" path="projects/sel4-gpi" remote="sid-agrawal" revision="main" upstream="main" dest-branch="main">
     <linkfile src="easy-settings.cmake" dest="easy-settings.cmake"/>
   </project>

@@ -124,3 +124,10 @@ We are using the [adafruit](https://www.adafruit.com/product/954) serial to USB 
 
 
 > When using DTECH Cable instead of ADAFRUIT. Remember that Green and white are flipped.
+
+## Status
+* Serial connection with the desktop is giving garbled data. 
+
+## Todo
+* Try with leap-405: IPMI console seems to reading from ttys0
+* Try PXE boot with leap-405

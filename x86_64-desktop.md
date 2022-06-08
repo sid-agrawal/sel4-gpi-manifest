@@ -8,6 +8,11 @@ SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
 seL4 runs on 32-bit ia32 and 64-bit x64 machines, on qemu and on
 hardware.
 
+## Status
+* Works with Dijkstra and window client and [this cable]([url](https://www.amazon.ca/gp/product/B075YHFMC7/)).
+* Hemlock: Garbled data
+* leap-403: no op on IPMI
+
 ## Simulation
 
 Checkout the sel4test project using repo as per seL4Test
@@ -124,10 +129,12 @@ We are using the [adafruit](https://www.adafruit.com/product/954) serial to USB 
 
 
 > When using DTECH Cable instead of ADAFRUIT. Remember that Green and white are flipped.
+> Finally worked with [this cable]([url](https://www.amazon.ca/gp/product/B075YHFMC7/))
+> ![image](https://user-images.githubusercontent.com/22774472/172685941-4a59fc6f-c225-40c8-8776-a38dc606bd62.png)
 
-## Status
-* Serial connection with the desktop is giving garbled data. 
+
+
 
 ## Todo
-* Try with leap-405: IPMI console seems to reading from ttys0
+* Try with leap-405: IPMI console seems to reading from ttys0. Tried changing the port via commandline to sel4 for port0 and port1, but there was no op on the ipmi.
 * Try PXE boot with leap-405

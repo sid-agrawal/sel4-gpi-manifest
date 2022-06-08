@@ -66,9 +66,9 @@ Use syslinux to create a bootable USB stick as follows.
 Assuming your USB flash drive is at `/dev/sdb` with a FAT partition at
 `/dev/sdb1`:
 ```bash
-install-mbr /dev/sdb
-syslinux --install /dev/sdb1
-mount /dev/sdb1 /mnt
+install-mbr /dev/sdf
+syslinux --install /dev/sdf1
+mount /dev/sdf1 /mnt
 cp images/sel4test-driver-image-ia32-pc99 /mnt/rootserver
 cp images/kernel-ia32-pc99 /mnt/sel4kernel
 cat > /mnt/syslinux.cfg <<EOF
